@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
+    <title>Project Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Mobile Menu Toggle Button -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="container">
+      <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h1>My Projects</h1>
+          <p>Explore my development portfolio</p>
+        </div>
+        <div class="project-list">
+          <a
+            href="#"
+            class="project-item"
+            data-url="https://password-generator-flame-two.vercel.app/"
+            data-title="Password Generator"
+          >
+            <div class="project-title">Password Generator</div>
+            <div class="project-description">
+              A simple and secure password generator built with React.
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project-item"
+            data-url="https://prathamesh-kapade.github.io/RepoForBasic3/"
+            data-title="Landing Page"
+          >
+            <div class="project-title">Landing Page</div>
+            <div class="project-description">
+              Beautiful UI/UX interface design
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="project-item"
+            data-url="https://prathamesh-kapade.github.io/RepoForBasic2/"
+            data-title="BMI Calculator"
+          >
+            <div class="project-title">BMI Calculator</div>
+            <div class="project-description">
+              
+            </div>
+          </a>
+          <a
+            href="#"
+            class="project-item"
+            data-url="https://react-repo-e96m.vercel.app/"
+            data-title="Tech Blogs"
+          >
+            <div class="project-title">Tech Blogs</div>
+            <div class="project-description">
+              A simple blog website built with React.
+            </div>
+          </a>
+        </div>
+      </nav>
+
+      <main class="main-content">
+        <div class="welcome-screen" id="welcome">
+          <div class="welcome-icon">🚀</div>
+          <h1 class="welcome-title">Welcome to My Projects</h1>
+          <p class="welcome-subtitle">
+            Select a project from the sidebar to view it here.
+          </p>
+
+          <div class="stats"></div>
+        </div>
+
+        <div id="project-content" style="display: none">
+          <div class="frame-header">
+            <h2 class="frame-title" id="project-title">Project Title</h2>
+            <a
+              href="#"
+              class="external-link"
+              id="external-link"
+              target="_blank"
+            >
+              <span>Open in New Tab</span>
+              <span>↗</span>
+            </a>
+          </div>
+          <iframe class="project-frame" id="project-frame" src=""></iframe>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
